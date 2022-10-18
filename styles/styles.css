@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(-45deg, #9ce3f0, #e73c7e, #2caddb, #d523c6);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+.nav {
+  background-color: black;
+  /* width: 10px; */
+  height: 40px;
+  color: whitesmoke;
+}
+
+.title{
+    text-align: center;
+    padding-top: 5px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
