@@ -4,47 +4,52 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Memorama" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;width=90;height=36;" vertex="1" parent="1">
-                    <mxGeometry x="150" y="54" width="890" height="720" as="geometry"/>
+                <mxCell id="2" value="Memorama" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;width=90;height=36;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="54" width="890" height="656" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+                <mxCell id="8" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="5">
+                <mxCell id="9" style="edgeStyle=none;html=1;" parent="1" source="3" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="14">
+                <mxCell id="16" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="3" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="Jugador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;rounded=0;" vertex="1" parent="1">
+                <mxCell id="27" value="&amp;lt;&amp;lt;inlcude&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="16">
+                    <mxGeometry x="0.2864" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Jugador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="70" y="390" width="30" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Seleccionar carta" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+                <mxCell id="4" value="Seleccionar carta" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="300" y="370" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="Reiniciar juego" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+                <mxCell id="5" value="Reiniciar juego" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="280" y="510" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="14">
+                <mxCell id="15" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="12" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" style="edgeStyle=none;html=1;" edge="1" parent="1" source="12" target="17">
+                <mxCell id="18" style="edgeStyle=none;html=1;" parent="1" source="12" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" style="edgeStyle=none;html=1;" edge="1" parent="1" source="12" target="19">
+                <mxCell id="21" style="edgeStyle=none;html=1;" parent="1" source="12" target="19" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="SIstema" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
+                <mxCell id="12" value="SIstema" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
                     <mxGeometry x="910" y="90" width="30" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="Reiniciar el Juego" style="ellipse;whiteSpace=wrap;html=1;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
-                    <mxGeometry x="500" y="180" width="140" height="70" as="geometry"/>
+                <mxCell id="14" value="Reiniciar el Juego" style="ellipse;whiteSpace=wrap;html=1;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="210" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="Contar intentos" style="ellipse;whiteSpace=wrap;html=1;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
-                    <mxGeometry x="600" y="320" width="140" height="70" as="geometry"/>
+                <mxCell id="17" value="Contar intentos" style="ellipse;whiteSpace=wrap;html=1;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="330" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="Contar aciertos" style="ellipse;whiteSpace=wrap;html=1;gradientColor=none;gradientDirection=north;" vertex="1" parent="1">
-                    <mxGeometry x="670" y="480" width="140" height="70" as="geometry"/>
+                <mxCell id="19" value="Contar aciertos" style="ellipse;whiteSpace=wrap;html=1;gradientColor=none;gradientDirection=north;" parent="1" vertex="1">
+                    <mxGeometry x="855" y="470" width="140" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
