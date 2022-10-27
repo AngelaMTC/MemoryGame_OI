@@ -35,7 +35,7 @@ new Vue({
                 title: "You lost",
                 html: `
             <img class="img-fluid" src="../styles/images/gameover.jpg" alt="Perdiste">
-            <p class="h4">Agotaste tus attempts</p>`,
+            <p class="h4">Agotaste tus intentos</p>`,
                 confirmButtonText: "Jugar de nuevo",
                 allowOutsideClick: false,
                 allowEscapeKey: false,
@@ -161,12 +161,12 @@ new Vue({
     // CArgar las imágenes:
     loadImg() {
       // Mostrar la alerta
-      // Swal.fire({
-      //   title: "Charging...",
-      //   allowOutsideClick: false,
-      //   allowEscapeKey: false,
-      // }).then(this.restartGame);
-      // Swal.showLoading();
+      Swal.fire({
+        title: "Charging...",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+      }).then(this.restartGame);
+      Swal.showLoading();
 
       let total = this.images.length,
         contador = 0;
