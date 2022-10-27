@@ -47,7 +47,7 @@ new Vue({
         Swal.fire({
                 title: "¡Ganaste!",
                 html: `
-            <img class="img-fluid" src="./img/ganaste.png" alt="Ganaste">
+            <img class="img-fluid" src="../styles/images/win.png" alt="Ganaste">
             <p class="h4">Muy bien hecho</p>`,
                 confirmButtonText: "Jugar de nuevo",
                 allowOutsideClick: false,
@@ -161,12 +161,12 @@ new Vue({
     // CArgar las imágenes:
     loadImg() {
       // Mostrar la alerta
-      Swal.fire({
-        title: "Charging...",
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-      }).then(this.restartGame);
-      Swal.showLoading();
+      // Swal.fire({
+      //   title: "Charging...",
+      //   allowOutsideClick: false,
+      //   allowEscapeKey: false,
+      // }).then(this.restartGame);
+      // Swal.showLoading();
 
       let total = this.images.length,
         contador = 0;
