@@ -163,7 +163,6 @@ new Vue({
       // Mostrar la alerta
       Swal.fire({
         title: "Charging...",
-        html: `Charging images...`,
         allowOutsideClick: false,
         allowEscapeKey: false,
       }).then(this.restartGame);
