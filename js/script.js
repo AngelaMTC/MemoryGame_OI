@@ -29,6 +29,36 @@ new Vue({
     waitTime: false,
   }),
   methods: {
+    // Método que muestra la alerta indicando que el jugador ha perdido; después de mostrarla, se reinicia el juego:
+    failed() {
+        Swal.fire({
+                title: "You lost",
+                html: `
+            <img class="img-fluid" src="../styles/images/gameover.jpg" alt="Perdiste">
+            <p class="h4">Agotaste tus attempts</p>`,
+                confirmButtonText: "Jugar de nuevo",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+            })
+            .then(this.restartGame)
+    },
+    // Mostrar alerta de victoria y reiniciar juego:
+    victory() {
+        Swal.fire({
+                title: "¡Ganaste!",
+                html: `
+            <img class="img-fluid" src="./img/ganaste.png" alt="Ganaste">
+            <p class="h4">Muy bien hecho</p>`,
+                confirmButtonText: "Jugar de nuevo",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+            })
+            .then(this.restartGame)
+    },
+    // Método que indica si el jugador ha ganado:
+    winner() {
+        return this.memorama.every(array => array.every(image => image.sucess));
+    },
     // Para mezclar un arreglo:
     random(random) {
       var j, x, i;
@@ -39,6 +69,13 @@ new Vue({
         random[j] = x;
       }
       return random;
+    },
+    // Aumenta un intento y verifica si el jugador ha perdido:
+    attemptIncrease() {
+        this.attempts++;
+        if (this.attempts >= maxAttempts) {
+            this.failed();
+        }
     },
     // Se desencadena cuando se hace click en la imagen (voltear la imagen):
     flip(iFile, iImg) {
@@ -72,7 +109,7 @@ new Vue({
       // Al seleccionar imagen par (se guarda la última seleccionada):
       this.memorama[iFile][iImg].show = true;
       if (imgSelected.ruta === ultimaimgSelected.ruta) {
-        this.aciertos++;
+        this.correctAnswer++;
         this.memorama[iFile][iImg].sucess = true;
         this.memorama[this.lastClick.iFile][this.lastClick.iImg].sucess = true;
         this.lastClick.iFile = null;
@@ -117,7 +154,7 @@ new Vue({
       }
       // Reiniciar attempts
       this.attempts = 0;
-      this.aciertos = 0;
+      this.correctAnswer = 0;
       // Asignar a instancia de Vue para que lo dibuje
       this.memorama = memoramaDividido;
     },
