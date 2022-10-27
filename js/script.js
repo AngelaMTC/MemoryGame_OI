@@ -1,5 +1,5 @@
 const maxAttempts = 8, // attempts máximos que tiene el jugador
-  columns = 4, // columns del memorama
+  columns = 4, // columnas del memorama
   timeFlip = 1, // Por cuántos segundos mostrar ambas imágenes
   imgHidden = "../styles/images/block.jpg"; // La imagen que se muestra cuando la real está oculta
 new Vue({
@@ -147,7 +147,7 @@ new Vue({
       // Mandar aleatorio las imágenes:
       this.random(memorama);
 
-      // Dividirlo en subarreglos o columns
+      // Dividirlo en subarreglos o columnas
       let memoramaDividido = [];
       for (let i = 0; i < memorama.length; i += columns) {
         memoramaDividido.push(memorama.slice(i, i + columns));
@@ -163,6 +163,7 @@ new Vue({
       // Mostrar la alerta
       Swal.fire({
         title: "Charging...",
+        html: `Charging images...`,
         allowOutsideClick: false,
         allowEscapeKey: false,
       }).then(this.restartGame);
